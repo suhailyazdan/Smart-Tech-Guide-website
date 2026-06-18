@@ -1,13 +1,14 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import logo from '../assets/logo-transparent.png';
 ---
 
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div>
-			<img src="" />
+			<img src={logo.src} alt="Smart Tech Guide" class="w-30 " />
 		</div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
